@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+        <script type="text/javascript" src="apicall.js"></script>
+
+    </head>
+<body>
+<div >
+    <div > <input  id="city"
+                   placeholder="Search City/Zip" type="text"> <span >
+              <button class="btn btn-default" type="button" id="goButton" onclick="getWeather()">Hit Me!</button>
+        </span> </div>
+    <br>
+    <h2 ><span class="c_city">City</span>, <span class="c_country">Country</span></h2>
+    <h1 ><span class="c_temp"></span></h1>
+    <h3 ><img class="c_icon" src=""><span class="c_condition"></span></h3>
+    <table class="table">
+        <tr>
+            <td class="f_time">DateTime Value</td>
+            <td class="f_temp">Temperature in Fahrenheit</td>
+            <td class="f_weather">Clarity</td>
+        </tr>
+        <tr>
+            <td class="f_time">DateTime Value</td>
+            <td class="f_temp">Temperature in Fahrenheit</td>
+            <td class="f_weather">Clarity</td>
+        </tr>
+        <tr>
+            <td class="f_time">DateTime Value</td>
+            <td class="f_temp">Temperature in Fahrenheit</td>
+            <td class="f_weather">Clarity</td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>
